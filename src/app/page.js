@@ -14,7 +14,8 @@ const Home = () => {
   // const [email, setEmail] = useState("");
   // const [emailError, setEmailError] = useState("");
 
-  const HOST_URL = "http://localhost:5000/api/";
+  // const HOST_URL = "http://localhost:5000/api/";
+  const HOST_URL = "https://crudback-4g3a.onrender.com/api/";
 
   useEffect(() => {
     const fetchData = async () => {
