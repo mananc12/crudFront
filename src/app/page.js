@@ -63,9 +63,9 @@ const Home = () => {
       // setEmail("");
       // console.log("Email sent successfully!", { selectedRows});
 
+      alert("Email sent Successfully! Check your mail. It will take sometime, keep patience.");
+      window.location.reload();
       const sendRows = await axios.post(`${HOST_URL}send`, { selectedRows });
-      alert("Email sent Successfully! Check your mail.");
-      setSelectedRows([]);
     } catch (error) {
       console.error("Error sending email:", error);
     }
